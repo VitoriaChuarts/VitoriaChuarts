@@ -36,6 +36,9 @@ Estudante de Engenharia de Software que constrói **e** protege aplicações: do
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:00f5d4,100:ff4fa3&height=40&section=header&text=contato&fontSize=20&fontColor=ffffff" width="100%"/>
 
-[LinkedIn](link) · [e-mail](mailto:seu@email.com)
+<p align="center">
+  <a href="https://www.linkedin.com/in/vit%C3%B3ria-chuarts-687b26191"><img src="https://img.shields.io/badge/LinkedIn-ff4fa3?style=for-the-badge"/></a>
+  <a href="mailto:vitoriachuarts@icloud.com"><img src="https://img.shields.io/badge/E--mail-9b5de5?style=for-the-badge&logo=icloud&logoColor=white"/></a>
+</p>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00f5d4,50:ff4fa3,100:9b5de5&height=120&section=footer" width="100%"/>
