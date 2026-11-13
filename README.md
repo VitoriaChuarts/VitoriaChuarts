@@ -38,7 +38,11 @@ Estudante de Engenharia de Software que constrói **e** protege aplicações: do
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:9b5de5,100:ff4fa3&height=40&section=header&text=atividade&fontSize=20&fontColor=ffffff" width="100%"/>
 
-<img src="https://raw.githubusercontent.com/VitoriaChuarts/VitoriaChuarts/output/github-snake-dark.svg" width="100%"/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/VitoriaChuarts/VitoriaChuarts/output/github-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/VitoriaChuarts/VitoriaChuarts/output/github-snake.svg">
+  <img alt="Cobrinha comendo os commits" src="https://raw.githubusercontent.com/VitoriaChuarts/VitoriaChuarts/output/github-snake.svg" width="100%">
+</picture>
 
 <p align="center">
   <img src="https://img.shields.io/github/last-commit/VitoriaChuarts/scanner-de-senhas?style=for-the-badge&color=ff4fa3&labelColor=0d1117"/>
