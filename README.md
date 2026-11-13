@@ -29,8 +29,9 @@ Estudante de Engenharia de Software que constrói **e** protege aplicações: do
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:9b5de5,100:ff4fa3&height=40&section=header&text=stats&fontSize=20&fontColor=ffffff" width="100%"/>
 
 <p align="center">
-  <img height="150" src="https://github-readme-stats.vercel.app/api?username=VitoriaChuarts&show_icons=true&theme=radical&hide_border=true"/>
-  <img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=VitoriaChuarts&layout=compact&theme=radical&hide_border=true"/>
+  <img src="https://img.shields.io/github/last-commit/VitoriaChuarts/scanner-de-senhas?style=for-the-badge&color=ff4fa3&labelColor=0d1117"/>
+  <img src="https://img.shields.io/badge/foco-cyber_%2B_full_stack-9b5de5?style=for-the-badge&labelColor=0d1117"/>
+  <img src="https://img.shields.io/badge/aprendendo-todo_dia-00c9a7?style=for-the-badge&labelColor=0d1117"/>
 </p>
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:00f5d4,100:ff4fa3&height=40&section=header&text=contato&fontSize=20&fontColor=ffffff" width="100%"/>
