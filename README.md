@@ -1,31 +1,31 @@
-<!-- Banner Animado (Estilo Cyber/Terminal) -->
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:003b2f,100:00ff41&height=190&section=header&text=Vitória%20Chuarts&fontSize=46&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Full-Stack%20Development%20%7C%20Cybersecurity%20%26%20AppSec&descAlignY=60&descSize=17" width="100%"/>
-</div>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:ff4fa3&height=180&section=header&text=Vitória%20Chuarts&fontColor=ffffff&fontSize=42" width="100%"/>
 
-<!-- Efeito Máquina de Escrever -->
-<div align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=19&pause=1000&color=00FF41&center=true&vCenter=true&width=650&lines=Estudante+de+Engenharia+de+Software;Desenvolvimento+Web+Full-Stack+(Python+%7C+Flask);Foco+em+Ciberseguran%C3%A7a+%26+AppSec;Construindo+APIs+e+aplica%C3%A7%C3%B5es+seguras" alt="Typing SVG" />
-  </a>
-</div>
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=FF4FA3&center=true&vCenter=true&width=500&lines=Cybersecurity+%2B+Full+Stack;Kali+Linux+%7C+Python+%7C+FastAPI;Construindo+e+protegendo" />
+</p>
 
----
+## 🔐 `whoami`
+Estudante de Engenharia de Software que constrói **e** protege aplicações:
+do backend à interface, e do código ao histórico do Git.
 
-### 🛡️ Sobre Mim
+## 🛠️ Stack
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
+![Kali](https://img.shields.io/badge/Kali-557C94?style=flat-square&logo=kalilinux&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 
-<!-- Banner Animado Estável (via Render) -->
-<div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=36&duration=2500&pause=1000&color=00FF41&background=0D1117&center=true&vCenter=true&width=850&height=130&lines=Vit%C3%B3ria+Chuarts;Full-Stack+%26+Cybersecurity" alt="Banner" />
-</div>
+## 🚀 Projetos em destaque
+| Projeto | O que faz | Área |
+|---|---|---|
+| [scanner-de-senhas](link) | Detecta credenciais expostas no código e no histórico do Git | 🔐 Cyber |
+| [Analisador-de-senha](link) | Audita a força de senhas | 🔐 Cyber |
+| [analisador de phishing](link) | API + interface com pontuação de risco para URLs e e-mails | 🔐 + 🌐 |
+| [bem-estar-app](link) | Diário de bem-estar com login seguro e proteção contra XSS | 🌐 Full stack |
 
-<!-- Subtítulo Animado -->
-<div align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&pause=1000&color=00FF41&center=true&vCenter=true&width=650&lines=Estudante+de+Engenharia+de+Software;Desenvolvimento+Web+Full-Stack+(Python+%7C+Flask);Foco+em+Ciberseguran%C3%A7a+%26+AppSec;Construindo+APIs+e+aplica%C3%A7%C3%B5es+seguras" alt="Typing SVG" />
-  </a>
-</div>
+## 📊 Stats
+<img height="150" src="https://github-readme-stats.vercel.app/api?username=VitoriaChuarts&show_icons=true&theme=dark&title_color=ff4fa3&icon_color=ff4fa3&bg_color=0d1117&hide_border=true"/>
 
----
-
-### 🔐 Sobre Mim
+## 📫 Contato
+[LinkedIn](link) · [e-mail](mailto:seu@email.com)
