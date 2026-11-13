@@ -1,31 +1,40 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:ff4fa3&height=180&section=header&text=Vitória%20Chuarts&fontColor=ffffff&fontSize=42" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:9b5de5,50:ff4fa3,100:00f5d4&height=200&section=header&text=Vitória%20Chuarts&fontColor=ffffff&fontSize=44" width="100%"/>
 
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=FF4FA3&center=true&vCenter=true&width=500&lines=Cybersecurity+%2B+Full+Stack;Kali+Linux+%7C+Python+%7C+FastAPI;Construindo+e+protegendo" />
 </p>
 
-## 🔐 `whoami`
-Estudante de Engenharia de Software que constrói **e** protege aplicações:
-do backend à interface, e do código ao histórico do Git.
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:ff4fa3,100:9b5de5&height=40&section=header&text=whoami&fontSize=20&fontColor=ffffff" width="100%"/>
 
-## 🛠️ Stack
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
-![Kali](https://img.shields.io/badge/Kali-557C94?style=flat-square&logo=kalilinux&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+Estudante de Engenharia de Software que constrói **e** protege aplicações: do backend à interface, e do código ao histórico do Git.
 
-## 🚀 Projetos em destaque
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:9b5de5,100:00f5d4&height=40&section=header&text=stack&fontSize=20&fontColor=ffffff" width="100%"/>
+
+![Python](https://img.shields.io/badge/Python-ff4fa3?style=for-the-badge&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-9b5de5?style=for-the-badge&logo=fastapi&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-00c9a7?style=for-the-badge&logo=javascript&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-ff4fa3?style=for-the-badge&logo=sqlite&logoColor=white)
+![Kali](https://img.shields.io/badge/Kali-9b5de5?style=for-the-badge&logo=kalilinux&logoColor=white)
+![Git](https://img.shields.io/badge/Git-00c9a7?style=for-the-badge&logo=git&logoColor=white)
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:ff4fa3,100:00f5d4&height=40&section=header&text=projetos&fontSize=20&fontColor=ffffff" width="100%"/>
+
 | Projeto | O que faz | Área |
 |---|---|---|
 | [scanner-de-senhas](link) | Detecta credenciais expostas no código e no histórico do Git | 🔐 Cyber |
 | [Analisador-de-senha](link) | Audita a força de senhas | 🔐 Cyber |
-| [analisador de phishing](link) | API + interface com pontuação de risco para URLs e e-mails | 🔐 + 🌐 |
-| [bem-estar-app](link) | Diário de bem-estar com login seguro e proteção contra XSS | 🌐 Full stack |
+| [analisador de phishing](link) | API + interface com pontuação de risco | 🔐 + 🌐 |
+| 🔒 bem-estar-app | Diário de bem-estar com login seguro e proteção contra XSS (em breve público) | 🌐 Full stack |
 
-## 📊 Stats
-<img height="150" src="https://github-readme-stats.vercel.app/api?username=VitoriaChuarts&show_icons=true&theme=dark&title_color=ff4fa3&icon_color=ff4fa3&bg_color=0d1117&hide_border=true"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:9b5de5,100:ff4fa3&height=40&section=header&text=stats&fontSize=20&fontColor=ffffff" width="100%"/>
 
-## 📫 Contato
+<p align="center">
+  <img height="150" src="https://github-readme-stats.vercel.app/api?username=VitoriaChuarts&show_icons=true&theme=radical&hide_border=true"/>
+  <img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=VitoriaChuarts&layout=compact&theme=radical&hide_border=true"/>
+</p>
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00f5d4,100:ff4fa3&height=40&section=header&text=contato&fontSize=20&fontColor=ffffff" width="100%"/>
+
 [LinkedIn](link) · [e-mail](mailto:seu@email.com)
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00f5d4,50:ff4fa3,100:9b5de5&height=120&section=footer" width="100%"/>
