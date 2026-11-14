@@ -66,12 +66,16 @@ Estudante de **Engenharia de Software** que constrói **e** protege aplicações
 | 🔑 [Analisador-de-senha](https://github.com/VitoriaChuarts/Analisador-de-senha) | Audita a força de senhas | Python |
 | 🎣 [analisador-de-phishing](https://github.com/VitoriaChuarts/analisador-de-phishing) | API + interface com pontuação de risco para URLs e e-mails | Python · FastAPI |
 
+<img src="https://raw.githubusercontent.com/VitoriaChuarts/VitoriaChuarts/main/demo-titulo.svg" width="100%"/>
+
+<img src="https://raw.githubusercontent.com/VitoriaChuarts/VitoriaChuarts/main/demo.svg" width="100%"/>
+
 <img src="https://raw.githubusercontent.com/VitoriaChuarts/VitoriaChuarts/main/atividade.svg" width="100%"/>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/VitoriaChuarts/VitoriaChuarts/output/github-snake-dark.svg?v=3">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/VitoriaChuarts/VitoriaChuarts/output/github-snake.svg?v=3">
-  <img alt="Cobrinha comendo os commits" src="https://raw.githubusercontent.com/VitoriaChuarts/VitoriaChuarts/output/github-snake.svg?v=3" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/VitoriaChuarts/VitoriaChuarts/output/github-snake-dark.svg?v=4">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/VitoriaChuarts/VitoriaChuarts/output/github-snake.svg?v=4">
+  <img alt="Cobrinha comendo os commits" src="https://raw.githubusercontent.com/VitoriaChuarts/VitoriaChuarts/output/github-snake.svg?v=4" width="100%">
 </picture>
 
 <p align="center">
