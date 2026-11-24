@@ -1,94 +1,93 @@
-<img src="https://raw.githubusercontent.com/VitoriaChuarts/VitoriaChuarts/main/header.svg" width="100%"/>
+<div align="center">
 
-<br/>
+# 🛡️ mini-SIEM
 
-<table align="center">
-<tr>
-<td width="42%">
-  <img src="https://raw.githubusercontent.com/VitoriaChuarts/VitoriaChuarts/main/scanner.gif" width="100%"/>
-</td>
-<td>
+**A lightweight Security Information and Event Management platform that correlates alerts from an SSH honeypot, a packet-level NIDS and a phishing analyzer, all in one real-time dashboard.**
+
+![Java](https://img.shields.io/badge/Java-111111?style=flat&logo=openjdk&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-111111?style=flat&logo=springboot&logoColor=6DB33F)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-111111?style=flat&logo=postgresql&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-111111?style=flat&logo=docker&logoColor=2496ED)
+![Python](https://img.shields.io/badge/Python-111111?style=flat&logo=python&logoColor=3776AB)
+![MITRE ATT&CK](https://img.shields.io/badge/MITRE_ATT%26CK-mapped-C1121F?style=flat)
+
+<img src="docs/demo.gif" alt="mini-SIEM live demo" width="85%"/>
+
+</div>
+
+---
+
+## Why this project
+
+Security tools are usually studied in isolation. This project connects three of them, built from scratch, into a single pipeline: **collect → centralize → correlate → visualize**. It mirrors, at a small scale, how a real SOC ingests and triages events.
+
+## Architecture
+
+```mermaid
+flowchart LR
+    A["🍯 SSH Honeypot<br/>Python · paramiko"] -->|credential attempts| D
+    B["📡 NIDS<br/>Python · Scapy"] -->|scan / flood alerts| D
+    C["🎣 Phishing Analyzer<br/>Python"] -->|risk-scored URLs & emails| D
+    D["⚙️ Ingestion API<br/>Java · Spring Boot"] --> E[("🗄️ PostgreSQL")]
+    E --> F["📊 Dashboard"]
+```
+
+## Event sources
+
+| Source | What it detects | How it works | MITRE ATT&CK |
+|---|---|---|---|
+| **SSH Honeypot** | Credential guessing against a fake SSH service | Real SSH protocol via `paramiko`, multi-threaded, logs IP, username and password | [T1110](https://attack.mitre.org/techniques/T1110/) Brute Force |
+| **NIDS** | Port scans (10+ distinct ports from one IP) and SYN floods (50+ SYN packets) | Live packet capture and analysis with Scapy | [T1046](https://attack.mitre.org/techniques/T1046/) Network Service Discovery, [T1498.001](https://attack.mitre.org/techniques/T1498/001/) Direct Network Flood |
+| **Phishing Analyzer** | Suspicious URLs and `.eml` emails | Risk scoring (low / medium / high) from typosquatting, domain age, SSL and redirects | [T1566](https://attack.mitre.org/techniques/T1566/) Phishing |
+
+Each source lives in its own repository:
+[`honeypot-ssh`](https://github.com/VitoriaChuarts/honeypot-ssh) · [`nids-python`](https://github.com/VitoriaChuarts/nids-python) · [`analisador-de-phishing`](https://github.com/VitoriaChuarts/analisador-de-phishing)
+
+## Dashboard
+
+<div align="center">
+<img src="docs/dashboard.png" alt="mini-SIEM dashboard" width="90%"/>
+</div>
+
+## Getting started
+
+**Requirements:** Java 17+, Docker, Python 3.10+ (for the event sources)
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/VitoriaChuarts/mini-siem.git
+cd mini-siem
+
+# 2. Start PostgreSQL
+docker-compose up -d
+
+# 3. Run the backend
+cd backend
+./mvnw spring-boot:run
+```
+
+Then open the dashboard in your browser and start any of the event sources to see alerts arrive in real time.
+
+## Project structure
 
 ```
-$ whoami
-vitoria_chuarts
-
-$ cat perfil.txt
-> cyber + full stack
-> kali · python · fastapi
-> status: online ♡
-
-$ ls projetos/
-scanner-de-senhas
-analisador-de-senha
-analisador-de-phishing
-honeypot-ssh
+mini-siem/
+├── backend/          # Spring Boot ingestion API
+├── docker-compose.yml  # PostgreSQL
+└── docs/             # screenshots and demo
 ```
 
-</td>
-</tr>
-</table>
+## Roadmap
 
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1200&color=FF2D95&center=true&vCenter=true&width=560&lines=Construo+e+protejo+aplica%C3%A7%C3%B5es+%E2%99%A1;Cyber+%2B+Full+Stack+%E2%9C%A6;Hack+%26+Glam" />
-</p>
+- [ ] Dashboard authentication
+- [ ] Rule-based detection with YAML rules mapped to MITRE ATT&CK (see Detection Engineering Lab)
+- [ ] Automated response actions
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=VitoriaChuarts&label=Visitas&color=ff2d95&style=for-the-badge"/>
-</p>
+## ⚠️ Responsible use
 
-<img src="https://raw.githubusercontent.com/VitoriaChuarts/VitoriaChuarts/main/sobre.svg" width="100%"/>
+Built for learning and portfolio purposes. Run the honeypot and attack simulations only in **isolated lab environments** you own or have permission to test.
 
-Estudante de **Engenharia de Software** que constrói **e** protege aplicações: do backend à interface, do código ao histórico do Git. Gosto de transformar ataque em aprendizado, e aprendizado em projeto. ✦
+## Author
 
-<img src="https://raw.githubusercontent.com/VitoriaChuarts/VitoriaChuarts/main/stack.svg" width="100%"/>
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=python,java,fastapi,js,html,css,sqlite,linux,bash,git&theme=dark"/>
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-ff2d95?style=for-the-badge&logo=python&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Java-b57bff?style=for-the-badge&logo=openjdk&logoColor=white"/>
-  <img src="https://img.shields.io/badge/FastAPI-ff2d95?style=for-the-badge&logo=fastapi&logoColor=white"/>
-  <img src="https://img.shields.io/badge/JavaScript-b57bff?style=for-the-badge&logo=javascript&logoColor=white"/>
-  <img src="https://img.shields.io/badge/SQLite-ff2d95?style=for-the-badge&logo=sqlite&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Kali-b57bff?style=for-the-badge&logo=kalilinux&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Git-ff2d95?style=for-the-badge&logo=git&logoColor=white"/>
-</p>
-
-<img src="https://raw.githubusercontent.com/VitoriaChuarts/VitoriaChuarts/main/projetos.svg" width="100%"/>
-
-| Projeto | O que faz | Tech |
-|---|---|---|
-| 🎀 [honeypot-ssh](https://github.com/VitoriaChuarts/honeypot-ssh) | Honeypot SSH feito do zero: simula um servidor, captura credenciais de atacantes e gera relatório com top senhas, usuários e IPs | Python · paramiko |
-| 🔐 [scanner-de-senhas](https://github.com/VitoriaChuarts/scanner-de-senhas) | Detecta credenciais expostas no código e no histórico do Git | Python · Git |
-| 🔑 [Analisador-de-senha](https://github.com/VitoriaChuarts/Analisador-de-senha) | Audita a força de senhas | Python |
-| 🎣 [analisador-de-phishing](https://github.com/VitoriaChuarts/analisador-de-phishing) | API + interface com pontuação de risco para URLs e e-mails | Python · FastAPI |
-
-<img src="https://raw.githubusercontent.com/VitoriaChuarts/VitoriaChuarts/main/demo-titulo.svg" width="100%"/>
-
-<img src="https://raw.githubusercontent.com/VitoriaChuarts/VitoriaChuarts/main/demo.svg" width="100%"/>
-
-<img src="https://raw.githubusercontent.com/VitoriaChuarts/VitoriaChuarts/main/atividade.svg" width="100%"/>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/VitoriaChuarts/VitoriaChuarts/output/github-snake-dark.svg?v=4">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/VitoriaChuarts/VitoriaChuarts/output/github-snake.svg?v=4">
-  <img alt="Cobrinha comendo os commits" src="https://raw.githubusercontent.com/VitoriaChuarts/VitoriaChuarts/output/github-snake.svg?v=4" width="100%">
-</picture>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/foco-cyber_%2B_full_stack-ff2d95?style=for-the-badge&labelColor=0a0610"/>
-  <img src="https://img.shields.io/badge/status-online_%E2%99%A1-b57bff?style=for-the-badge&labelColor=0a0610"/>
-  <img src="https://img.shields.io/badge/aprendendo-todo_dia-00f5d4?style=for-the-badge&labelColor=0a0610"/>
-</p>
-
-<img src="https://raw.githubusercontent.com/VitoriaChuarts/VitoriaChuarts/main/contato.svg" width="100%"/>
-
-<p align="center">
-  <a href="https://www.linkedin.com/in/vit%C3%B3ria-chuarts-687b26191"><img src="https://img.shields.io/badge/LinkedIn-ff2d95?style=for-the-badge"/></a>
-  <a href="mailto:vitoriachuarts@icloud.com"><img src="https://img.shields.io/badge/E--mail-b57bff?style=for-the-badge&logo=icloud&logoColor=white"/></a>
-</p>
-
-<img src="https://raw.githubusercontent.com/VitoriaChuarts/VitoriaChuarts/main/footer.svg" width="100%"/>
+**Vitória Chuarts**, Software Engineering student (Uniube) focused on full stack and security.
+[LinkedIn](https://www.linkedin.com/in/vitória-chuarts-687b26191) · [vitoriachuarts@icloud.com](mailto:vitoriachuarts@icloud.com)
